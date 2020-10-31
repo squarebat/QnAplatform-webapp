@@ -1,0 +1,9 @@
+<h3>Ask a question!</h3>
+<small class="text-disabled">Make sure to abide by the community guidlines. Be respectful to everyone!</small>
+<div>
+    <form>
+        <textarea #questionString class="form-control" rows="10"></textarea>
+        <br/>
+        <button class="btn btn-primary btn-sm" (click)="questionPost(questionString.value)" routerLink="/home">Ask!</button>
+    </form>
+</div>

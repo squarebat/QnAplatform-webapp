@@ -1,0 +1,26 @@
+<div class="d-flex flex-column justify-content-center col-sm-8 c6 c1-text">
+    <div class="d-flex flex-row align-self-center">
+        <div class="d-flex flex-column w-100">
+            <h1 class="display-3">Gist!</h1>
+            <h3 class="font-italic c5-text"><small>Learn, create, share...</small></h3>
+            <br>
+            <form>
+              <div class="form-group">
+                  <label for="username">Username</label>
+                  <input #username type="text" class="form-control" id="username" placeholder="Enter Username">
+              </div>                
+              <div class="form-group">
+                <label for="email">Email address</label>
+                <input #email type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="Enter email">
+                <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+              </div>
+              <div class="form-group">
+                <label for="password">Password</label>
+                <input #password type="password" class="form-control" id="password" placeholder="Password">
+              </div>
+              <button type="submit" class="btn btn-primary" (click)="createNewUser(username.value,email.value,password.value)" [routerLink] = "['/login', 'registered successfully']">Register</button>
+            </form>
+        </div>
+    </div>
+</div>
+

@@ -1,0 +1,75 @@
+html, body {
+    min-height: 100vh;
+    height: auto;
+    margin: 0;
+}
+.c1
+{
+    background-color: #1A1A1D;
+}
+.c1-text
+{
+    color: #1A1A1D;
+}
+.c2
+{
+    background-color: #4E4E50;
+}
+.c2-text
+{
+    color: #4E4E50;
+}
+
+.c8
+{
+    background-color:rgb(191, 191, 194);
+}
+.c8-text
+{
+    color: rgb(191, 191, 194);
+}
+
+.c3
+{
+    background-color: #6F2232;
+}
+.c3-text
+{
+    color: #6F2232;
+}
+
+.c7
+{
+    background-color: #950740;
+}
+.c7-text
+{
+    color: #950740;
+}
+
+.c4
+{
+    background-color: #C3073F;
+}
+.c4-text
+{
+    color: #C3073F;
+}
+
+.c5
+{
+    background-color: rgb(255, 16, 88);
+}
+.c5-text
+{
+    color: rgb(255, 16, 88);
+}
+
+.c6
+{
+    background-color: white;
+}
+.c6-text
+{
+    color: white;
+}

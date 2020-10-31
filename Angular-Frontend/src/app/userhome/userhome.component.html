@@ -1,0 +1,5 @@
+<div *ngFor="let question of questions">
+  <h3>{{ question.question_string }}</h3>
+  <small class="text-muted">Asked by {{ question.username }}</small><br/><br/>
+  <button class="btn btn-sm btn-primary" [routerLink]="['/answers', username, question._id]">View all answers</button>  
+</div>

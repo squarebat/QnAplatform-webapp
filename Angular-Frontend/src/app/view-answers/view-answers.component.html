@@ -1,0 +1,11 @@
+<h3>{{ question_string }}</h3>
+<div *ngFor="let answer of answers">
+    <small class="text-muted">{{ answer.username}}</small>
+    <p>{{ answer.answer_content }}</p>
+</div>
+<button class="btn btn-primary btn-sm" [style.display]="btnVisible" (click)="ansSecVisible = 'block'; btnVisible = 'none'">Add an Answer to this question</button>
+
+<div [style.display]="ansSecVisible">
+    <app-answer-form [questionId]="question_id" [username]="username"></app-answer-form>
+    <button class="btn btn-primary btn-sm"  (click)="ansSecVisible = 'none'; btnVisible='inline'">Cancel</button>
+</div>

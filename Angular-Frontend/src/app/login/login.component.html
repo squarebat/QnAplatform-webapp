@@ -1,0 +1,37 @@
+<div class="row h-100 w-100">
+  <div class="d-flex flex-column justify-content-center col-sm-3 c1 c6-text">
+
+  </div>
+  <div [style.height] = "'100vh'" class="d-flex flex-column justify-content-center col-sm-9 c6 c1-text">
+    <div class="d-flex flex-column justify-content-center col-sm-8 c6 c1-text">
+      <div class="d-flex flex-row align-self-center">
+        <div class="d-flex flex-column w-100">
+          <h1 class="display-3">Gist!</h1>
+          <h3 class="font-italic c5-text">
+            <small>Learn, create, share...</small>
+          </h3>
+          <span class="form-text text-danger">{{regMessage}}</span>
+          <br>
+          <form>
+            <div class="form-group" [style.width] = "'33vw'">
+              <label for="email">Email address</label>
+              <input #email [style.witdh] = "'33vw'" type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="Enter email">
+              <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+            </div>
+            <div class="form-group" [style.width] = "'33vw'">
+              <label for="password">Password</label>
+              <input #password type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+            </div>
+            <div class="form-group form-check">
+              <input type="checkbox" class="form-check-input" id="exampleCheck1">
+              <label class="form-check-label" for="exampleCheck1">Remember Me</label>
+            </div>
+            <span class="form-text text-danger">{{authMessage}}</span>
+            <button (click)="authenticateUser(email.value, password.value)" class="btn btn-color" routerLink="/home">Login</button>
+          </form>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
